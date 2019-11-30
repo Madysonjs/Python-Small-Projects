@@ -40,7 +40,7 @@ def findFiles():
         varFile = cur.fetchall()
         for column in varFile:
             msg = 'Below are your text files: {} {}'.format(column[0],  column[1])
-        print(msg)
+            print(msg)
 
 createTable()
 instTable()
