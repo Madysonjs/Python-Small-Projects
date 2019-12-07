@@ -1,4 +1,4 @@
-# Python 3.8.1
+# Python 3.8.0
 
 #Author: Madyson JS
 
@@ -16,8 +16,8 @@ class mainWindow(Frame):
     def __init__(self, primary, *args, **kwargs):
         Frame.__init__(self, primary, *args, **kwargs)
         #define size of primary window
-        self.fileinput = StringVar()
-        self.fileinput2 = StringVar()
+        self.sourcefile = StringVar()
+        self.destinationfile = StringVar()
         self.primary = primary
         self.primary.minsize(600,200)
         self.primary.maxsize(600,200)
@@ -32,6 +32,6 @@ class mainWindow(Frame):
 if __name__=="__main__":
     root = tk.Tk() #Represents the Tk.() root frame (window) into being
     App = mainWindow(root) #Represents our own class as an App object
-    root=mainWindow() #Ensures that the class object, in this case our window, keeps looping
+    root = mainWindow() #Ensures that the class object, in this case our window, keeps looping
     
         
